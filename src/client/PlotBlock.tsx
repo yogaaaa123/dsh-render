@@ -435,7 +435,7 @@ export const PlotBlock = memo(function PlotBlock({
               }
             }}
           >
-            {playing ? '⏸ 暂停' : '▶ 播放动画'}
+            {playing ? '⏸ Pause' : '▶ Play'}
           </button>
           {playing && (
             <div className={css.animTrack}>

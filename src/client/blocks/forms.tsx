@@ -130,7 +130,7 @@ export function SubmitNode({ node, onAction, answers }: {
       <div className={css.gradeWrap} data-genui-grade>
         <div className={css.gradeScore}>
           <span className={css.gradeScoreValue}>{score} / {graded.length}</span>
-          <span className={css.gradeScoreLabel}>得分{graded.length < scope.length ? `（${scope.length - graded.length} 题无答案未计分）` : ''}</span>
+          <span className={css.gradeScoreLabel}>Skor{graded.length < scope.length ? ` (${scope.length - graded.length} soal belum dijawab)` : ''}</span>
         </div>
         <div className={css.gradeList}>
           {scope.map(g => {
@@ -142,7 +142,7 @@ export function SubmitNode({ node, onAction, answers }: {
               return (
                 <div key={g} className={css.gradeItem}>
                   <span className={css.gradeQ}>{m.label}</span>
-                  <span className={css.gradeAns}>你的答案：{entry}</span>
+                  <span className={css.gradeAns}>Jawabanmu: {entry}</span>
                 </div>
               )
             }
@@ -152,8 +152,8 @@ export function SubmitNode({ node, onAction, answers }: {
                 <span className={css.gradeQ}>{m.label}</span>
                 <span className={css.gradeTag}>{isCorrect ? '✓' : '✗'}</span>
                 <span className={css.gradeAns}>
-                  你的答案：{entry}
-                  {!isCorrect && <span className={css.gradeRight}> 正确答案：{correct}</span>}
+                  Jawabanmu: {entry}
+                  {!isCorrect && <span className={css.gradeRight}> Jawaban benar: {correct}</span>}
                 </span>
                 {m.explanation !== undefined && <span className={css.gradeExp}>{m.explanation}</span>}
               </div>
@@ -170,7 +170,7 @@ export function SubmitNode({ node, onAction, answers }: {
             }
           }}
         >
-          重新作答
+          Ulangi
         </button>
       </div>
     )
@@ -201,7 +201,7 @@ export function SubmitNode({ node, onAction, answers }: {
       >
         {node.label}
       </button>
-      {total > 0 && <span className={css.submitHint} aria-live="polite">已选 {answered}/{total}</span>}
+      {total > 0 && <span className={css.submitHint} aria-live="polite">Dipilih {answered}/{total}</span>}
     </div>
   )
 }

@@ -77,11 +77,11 @@ export const AudioNode = memo(function AudioNode({ node }: { node: GenuiAudio })
     <figure className={css.media}>
       {node.alt !== undefined && <figcaption className={css.mediaLabel}>{node.alt}</figcaption>}
       {failed
-        ? <div className={css.mediaError} role="alert">音频无法播放</div>
+        ? <div className={css.mediaError} role="alert">Audio tidak dapat diputar</div>
         : <audio
             className={css.mediaPlayer}
             src={node.src}
-            aria-label={node.alt ?? '音频'}
+            aria-label={node.alt ?? 'Audio'}
             controls
             preload="metadata"
             loop={node.loop === true}
@@ -97,7 +97,7 @@ export const VideoNode = memo(function VideoNode({ node }: { node: GenuiVideo })
     <figure className={css.media}>
       {node.alt !== undefined && <figcaption className={css.mediaLabel}>{node.alt}</figcaption>}
       {failed
-        ? <div className={css.mediaError} role="alert">视频无法播放</div>
+        ? <div className={css.mediaError} role="alert">Video tidak dapat diputar</div>
         : <video
             className={`${css.mediaPlayer} ${css.videoPlayer}`}
             src={node.src}

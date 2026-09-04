@@ -21,29 +21,29 @@ import { requestPanelExpand, setLocalPanel } from './panel-store.ts'
 
 /** Default panel content published by `/panel`: the component overview. */
 export const DEFAULT_PANEL_SPEC: GenuiSpec = {
-  title: 'GenUI 面板',
+  title: 'GenUI Panel',
   items: [
-    { type: 'text', size: 'h3', content: 'GenUI 生成式界面' },
-    { type: 'text', size: 'muted', content: '面板会原地更新：对话里说「更新面板」，或再次执行 /panel 刷新。' },
+    { type: 'text', size: 'h3', content: 'GenUI Generative UI' },
+    { type: 'text', size: 'muted', content: 'Panel updates in place: say "update panel" in chat, or run /panel again to refresh.' },
     {
       type: 'grid', cols: 4, items: [
-        { type: 'stat', label: '组件', value: '38' },
-        { type: 'stat', label: '单个', value: '12' },
-        { type: 'stat', label: '组合', value: '8' },
-        { type: 'stat', label: '高级', value: '18' },
+        { type: 'stat', label: 'Komponen', value: '38' },
+        { type: 'stat', label: 'Dasar', value: '12' },
+        { type: 'stat', label: 'Kombinasi', value: '8' },
+        { type: 'stat', label: 'Lanjutan', value: '18' },
       ],
     },
     {
       type: 'list', items: [
-        { title: '单个 ×12', desc: 'text button input select checkbox link badge stat progress divider avatar spacer' },
-        { title: '组合 ×8', desc: 'row col grid card list table chart tabs' },
-        { title: '数据 ×7', desc: 'plot callout steps keyvalue diff json code' },
-        { title: '交互 ×5', desc: 'radio switch textarea accordion copy' },
-        { title: '高级 ×5', desc: 'mermaid scene3d timeline file-tree breadcrumb' },
-        { title: '教学 ×1', desc: 'quiz' },
+        { title: 'Dasar ×12', desc: 'text button input select checkbox link badge stat progress divider avatar spacer' },
+        { title: 'Kombinasi ×8', desc: 'row col grid card list table chart tabs' },
+        { title: 'Data ×7', desc: 'plot callout steps keyvalue diff json code' },
+        { title: 'Interaktif ×5', desc: 'radio switch textarea accordion copy' },
+        { title: 'Lanjutan ×5', desc: 'mermaid scene3d timeline file-tree breadcrumb' },
+        { title: 'Edukasi ×1', desc: 'quiz' },
       ],
     },
-    { type: 'callout', tone: 'info', title: '更新方式', content: '对话说「更新面板」→ 模型输出 panel:true 围栏；/panel clear 清空面板。' },
+    { type: 'callout', tone: 'info', title: 'Cara update', content: 'Di chat katakan "update panel" → model output panel:true fence; /panel clear untuk mengosongkan panel.' },
   ],
 }
 

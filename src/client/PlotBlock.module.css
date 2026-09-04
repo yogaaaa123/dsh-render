@@ -19,7 +19,7 @@
   --dsl-g-accent-soft: color-mix(in srgb, var(--dsl-g-accent) var(--dsl-g-tint), transparent);
   --dsl-g-tint: 8%;
   --dsl-g-tint-strong: 14%;
-  --dsl-g-font-mono: var(--ds-font-family-code, ui-monospace, 'SF Mono', monospace);
+  --dsl-g-font-mono: var(--ds-font-family-code, ui-monospace, 'JetBrainsMono Nerd Font Mono', 'DejaVu Sans Mono', 'SF Mono', monospace);
 
   padding: 14px 16px;
   background: var(--dsw-alias-bg-layer-1, var(--dsw-alias-markdown-code-block));

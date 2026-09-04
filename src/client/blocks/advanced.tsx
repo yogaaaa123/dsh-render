@@ -440,11 +440,11 @@ export const QuizNode = memo(function QuizNode({ node, onAction }: {
       {answered && (
         <div className={css.quizResult} aria-live="polite">
           <div className={correct ? css.quizCorrectMsg : css.quizWrongMsg}>
-            {correct ? '✓ 回答正确！' : '✗ 再想想看'}
+            {correct ? '✓ Benar!' : '✗ Coba lagi'}
             {chosen?.feedback !== undefined && <div className={css.quizFeedback}>{chosen.feedback}</div>}
           </div>
           {node.explanation !== undefined && <div className={css.quizExplanation}>{node.explanation}</div>}
-          <button type="button" className={css.quizRetry} onClick={() => setSelected(null)}>重新作答</button>
+          <button type="button" className={css.quizRetry} onClick={() => setSelected(null)}>Ulangi</button>
         </div>
       )}
     </div>
