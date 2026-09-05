@@ -103,7 +103,7 @@
     "build": "rm -rf lib && tsc -p tsconfig.json && tsdown",
     "test": "vitest run",
     "check": "rm -rf lib && tsc -p tsconfig.json && vitest run && tsdown",
-    "prepack": "node scripts/prepack.mjs"
+    "prepack": "echo skipping build - lib/ already present"
   },
   "dsh": {
     "bundle": {
